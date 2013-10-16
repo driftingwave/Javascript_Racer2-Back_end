@@ -1,5 +1,5 @@
 get '/' do
-  erb :home
+  erb :index
 end
 
 post '/new_game' do
@@ -38,3 +38,13 @@ get '/play/:game_id' do
 
   erb :play
 end
+
+get '/game_over/:winning_player_id' do
+  puts params[:winning_player_id]
+  puts session[:game_id]
+  puts "Params!!!!!!!!!!!!!!!!!!!!!!!"
+  # p params[:duration_of_game]
+
+  erb :results
+end
+

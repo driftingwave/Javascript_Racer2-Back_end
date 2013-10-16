@@ -1,81 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="application.css">
-  <script type="text/javascript" src="application.js"> </script>
-
 </head>
 
 <body>
-
   <div class="container">
     <h1>Ruby Racer!!</h1>
     <h2>Go go go!</h2><br>
 
-    <div>
-      <p id="game_over"></p>
-    </div>
+     <table class="racer_table">
+      <tr id="player1_strip">
+        <th><%= @player1.name %></th>
+        <td class="active1"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
 
-   <table class="racer_table">
-    <tr id="player1_strip">
-      <th><%= @player1.name %></th>
-      <td class="active1"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-
-    <tr id="player2_strip">
-      <th><%= @player2.name %></th>
-      <td class="active2"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
+      <tr id="player2_strip">
+        <th><%= @player2.name %></th>
+        <td class="active2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table><br>
+    <h2>
+    </h2><br>
+    <form id="game_over", method="get" action="/display_winner">
+    </form>
   </div>
+
+
 </body>
+
+
